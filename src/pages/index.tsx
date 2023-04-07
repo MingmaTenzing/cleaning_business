@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Nav from '../../components/Nav'
 import Landing from '../../components/Landing'
 import Services from '../../components/Services'
+import WhyChooseUs from '../../components/WhyChooseUs'
+import AboutUs from '../../components/AboutUs'
 
 
 export default function Home() {
@@ -19,6 +21,8 @@ export default function Home() {
       <Nav />
       <Landing />
       <Services />
+      <WhyChooseUs />
+      <AboutUs />
     </main>
     </>
   )

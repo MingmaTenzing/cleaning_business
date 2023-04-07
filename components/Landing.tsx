@@ -6,7 +6,7 @@ function Landing({}: Props) {
   return (
 <div className=" ">
     <div className="absolute top-0 left-0 -z-20 ">
-    <Image src={bg} alt="bg-photo" width={5760} height={3840}  className=" h-[100vh] md:h-[80vh] lg:h-[85vh] brightness-75 object-cover  bg-no-repeat"/>
+    <Image src={bg} alt="bg-photo" width={5760} height={3840}  className=" h-[100vh] md:h-[80vh] lg:h-[100vh] brightness-75 object-cover  bg-no-repeat"/>
 
     </div>
     <div className="p-4 mt-[200px] lg:mt-[90px] space-y-4 md:w-[400px] lg:w-[450px] pl-10">
