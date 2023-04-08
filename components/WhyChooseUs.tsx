@@ -12,7 +12,7 @@ function WhyChooseUs({}: Props) {
   </div>
     <div className="mt-4 flex flex-col items-center space-y-4 md:flex-row md:flex-wrap md:space-y-0 md:justify-center  ">
         
-      <div className=" hover:shadow-lg  bg-slate-100  md:m-3 h-[200px] w-[350px] space-y-4 border flex flex-col items-center justify-center p-2">
+      <div className=" hover:shadow-lg  rounded-lg  md:m-3 h-[200px] w-[350px] space-y-4 border flex flex-col items-center justify-center p-2">
         <CheckBadgeIcon className="w-10  text-green-600" />
         <h1 className=" text-gray-800 font-bold text-lg text-center"> We Provide Qualified & Expert</h1>
         <p className="text-center text-gray-500">
@@ -21,7 +21,7 @@ function WhyChooseUs({}: Props) {
           industry.
         </p>
       </div>
-      <div className="hover:shadow-lg  bg-slate-100 md:m-3 h-[200px] w-[350px] space-y-4 border flex flex-col items-center justify-center p-2">
+      <div className="hover:shadow-lg  rounded-lg md:m-3 h-[200px] w-[350px] space-y-4 border flex flex-col items-center justify-center p-2">
         <WrenchScrewdriverIcon className="w-10  text-purple-600" />
         <h1 className=" text-gray-800 font-bold text-lg text-center"> Modern Tools & Technology Use</h1>
         <p className="text-center text-gray-500">
@@ -30,7 +30,7 @@ function WhyChooseUs({}: Props) {
           industry.
         </p>
       </div>
-      <div className="hover:shadow-lg  bg-slate-100 md:m-3 h-[200px] w-[350px] space-y-4 border flex flex-col items-center justify-center p-2">
+      <div className="hover:shadow-lg  rounded-lg md:m-3 h-[200px] w-[350px] space-y-4 border flex flex-col items-center justify-center p-2">
         <PaperAirplaneIcon className="w-10 text-orange" />
         <h1 className=" text-gray-800 font-bold text-lg text-center"> Quick Responses & 24/7 Support</h1>
         <p className="text-center text-gray-500">

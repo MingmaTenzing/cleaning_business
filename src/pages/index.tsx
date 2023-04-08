@@ -21,8 +21,9 @@ export default function Home() {
       <Nav />
       <Landing />
       <Services />
-      <WhyChooseUs />
       <AboutUs />
+      <WhyChooseUs />
+     
     </main>
     </>
   )
