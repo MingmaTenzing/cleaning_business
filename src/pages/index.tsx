@@ -5,6 +5,7 @@ import Landing from '../../components/Landing'
 import Services from '../../components/Services'
 import WhyChooseUs from '../../components/WhyChooseUs'
 import AboutUs from '../../components/AboutUs'
+import Estimate from '../../components/Estimate'
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Services />
       <AboutUs />
       <WhyChooseUs />
+      <Estimate />
      
     </main>
     </>
