@@ -6,6 +6,7 @@ import Services from '../../components/Services'
 import WhyChooseUs from '../../components/WhyChooseUs'
 import AboutUs from '../../components/AboutUs'
 import Estimate from '../../components/Estimate'
+import Reviews from '../../components/Reviews'
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <AboutUs />
       <WhyChooseUs />
       <Estimate />
+      <Reviews />
      
     </main>
     </>
