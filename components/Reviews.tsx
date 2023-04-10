@@ -16,7 +16,7 @@ function Reviews({}: Props) {
     dots: true,
     infinite: true,
     speed: 500,
-
+autoPlay:true,
     slidesToShow: 3,
     slidesToScroll: 1,
     swipeToSlide: true,
