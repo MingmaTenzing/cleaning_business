@@ -16,7 +16,7 @@ function Estimate({}: Props) {
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  md:flex md:justify-center md:items-center   ">
       <div className="text-4xl text-white font-bold text-center md:text-start mr-4 w-[300px] lg:w-[400px] space-y-3">
        <p>
-        Let's get an estimate of your project
+        Let&apos;s get an estimate of your project
         </p> 
         <p className="text-sm hidden md:flex max-w-[250px]">Fill up the form and we will get in touch with you right after</p>
       </div>
@@ -33,7 +33,7 @@ function Estimate({}: Props) {
           <label className="text-white">Contact Number</label>
           <input type="text" className="rounded-lg px-5 w-[300px] py-2 text-gray-600 text-sm outline-none focus:border focus:border-orange " required />
         </div>
-        <button className="bg-red text-white px-3 py-1 rounded-lg ">Let's Go</button>
+        <button className="bg-red text-white px-3 py-1 rounded-lg ">Let&apos;s Go</button>
       </form>
     </div>
 

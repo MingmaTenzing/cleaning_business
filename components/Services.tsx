@@ -30,7 +30,7 @@ function Services({}: Props) {
           />
           <h1 className="font-bold text-2xl">House Cleaning</h1>
           <p className="text-sm text-center">
-            House cleaning services are available at recurring intervals. We'll
+            House cleaning services are available at recurring intervals. We&apos;ll
             make sure to keep your home clean on a weekly, bi-weekly or monthly
             basis.
           </p>
@@ -48,7 +48,7 @@ function Services({}: Props) {
           />
           <h1 className="font-bold text-2xl"> Deep Cleaning</h1>
           <p className="text-sm text-center">
-            House cleaning services are available at recurring intervals. We'll
+            House cleaning services are available at recurring intervals. We&apos;ll
             make sure to keep your home clean on a weekly, bi-weekly or monthly
             basis.
           </p>
@@ -66,7 +66,7 @@ function Services({}: Props) {
           />
           <h1 className="font-bold text-2xl text-center"> Post-Renovation Cleaning</h1>
           <p className="text-sm text-center">
-            House cleaning services are available at recurring intervals. We'll
+            House cleaning services are available at recurring intervals. We&apos;ll
             make sure to keep your home clean on a weekly, bi-weekly or monthly
             basis.
           </p>
@@ -84,7 +84,7 @@ function Services({}: Props) {
           />
           <h1 className="font-bold text-2xl text-center"> Apartment & Condo Cleaning</h1>
           <p className="text-sm text-center">
-            House cleaning services are available at recurring intervals. We'll
+            House cleaning services are available at recurring intervals. We&apos;ll
             make sure to keep your home clean on a weekly, bi-weekly or monthly
             basis.
           </p>
