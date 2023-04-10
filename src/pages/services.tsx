@@ -24,7 +24,7 @@ function ServicesPage({}: Props) {
         <h1 className="text-white font-bold text-2xl md:text-4xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Services</h1>
        
         </div>
-        <div className="-mt-40">
+        <div className="-mt-40 lg:-mt-20">
 
         <Services  />
         </div>
