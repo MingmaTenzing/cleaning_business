@@ -47,34 +47,37 @@ function Nav({}: Props) {
             <Bars3Icon className="w-8" onClick={() => setOpenMenu(!openMenu)} />
         </div>
         </div>
- <motion.div
-  animate={openMenu ? "open" : "closed"}
-  variants={variant}
-  transition={{ ease: 'linear', duration: 0.2}}
+        {
+          openMenu && <motion.div
+          animate={openMenu ? "open" : "closed"}
+          variants={variant}
+          transition={{ ease: 'linear', duration: 0.2}}
+         
+          className="absolute w-[50%] h-[100vh] bg-white top-0 left-1/2   z-50">
+          <div className="absolute right-2 p-4 ">
+            <CloseIcon  className="text-black  " fontSize="large"  onClick={() => setOpenMenu(!openMenu)} />
+            
+          </div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  ">
+         <Link href="/">
+          <p className="  font-semibold   text-xl; text-gray-800  my-2">Home</p>
+         
+         </Link>
+         <Link href="/services">
+          <p className="  font-semibold   text-xl; text-gray-800 my-2">Services</p>
+         
+         </Link>
+        
+         <Link href="">
+          <p className=" font-semibold  text-xl; text-gray-800 my-2">Contact Us</p>
+         
+         </Link>
+        
+          </div>
+        
+        </motion.div>
+        }
  
-  className="absolute w-[50%] h-[100vh] bg-white top-0 left-1/2   z-50">
-  <div className="absolute right-2 p-4 ">
-    <CloseIcon  className="text-black  " fontSize="large"  onClick={() => setOpenMenu(!openMenu)} />
-    
-  </div>
-  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  ">
- <Link href="/">
-  <p className="  font-semibold   text-xl; text-gray-800  my-2">Home</p>
- 
- </Link>
- <Link href="/services">
-  <p className="  font-semibold   text-xl; text-gray-800 my-2">Services</p>
- 
- </Link>
-
- <Link href="">
-  <p className=" font-semibold  text-xl; text-gray-800 my-2">Contact Us</p>
- 
- </Link>
-
-  </div>
-
-</motion.div>
 
        
     </div>
