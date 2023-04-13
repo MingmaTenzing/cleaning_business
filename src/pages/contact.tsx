@@ -64,7 +64,7 @@ function Contact({}: Props) {
             Get In Touch
           </h1>
 
-          <form className=" w-[600px] mt-10 space-y-4 md:flex md:flex-wrap md:space-y-0  ">
+          <form className=" md:max-w-[600px] max-w-[400px] mt-10 space-y-4 md:flex md:flex-wrap md:space-y-0  ">
             <div className="space-y-2 w-[300px] p-2">
 
             <div className="flex flex-col ">
