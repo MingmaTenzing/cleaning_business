@@ -6,9 +6,42 @@ import CallIcon from "@mui/icons-material/Call";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import Footer from "../../components/Footer";
+import { FormEvent, useState } from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 type Props = {};
 function Contact({}: Props) {
+  const [name, setName] = useState<string>();
+  const [email, setEmail] = useState<string>();
+  const [phone, setPhone] = useState<string>();
+  const [subject, setSubject] = useState<string>();
+  const [message, setMessage] = useState<string>();
+
+  console.log(name,email, phone, subject, message);
+
+const form = useRef<HTMLFormElement>(null);
+  function sendEmail(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const currentForm = form.current;
+
+    if (currentForm == null) {
+      return;
+    }
+    else {
+      emailjs.sendForm("service_spab4la" , "template_3gs2ipj", form.current! ,'5lDQ2fsinXAaz-OgN').then((result) => {
+        console.log(result.text);
+      },(error) => {
+        console.log(error.message);
+      }
+      ) 
+
+    }
+
+
+  }
+
   return (
     <>
       <Head>
@@ -64,14 +97,16 @@ function Contact({}: Props) {
             Get In Touch
           </h1>
 
-          <form className=" md:max-w-[600px] max-w-[400px] mt-10 space-y-4 md:flex md:flex-wrap md:space-y-0  ">
+          <form ref={form}  onSubmit={sendEmail} className=" md:max-w-[600px] max-w-[400px] mt-10 space-y-4 md:flex md:flex-wrap md:space-y-0  ">
             <div className="space-y-2 w-[300px] p-2">
 
             <div className="flex flex-col ">
               <label>Name</label>
               <input
+              onChange={(e) => setName(e.target.value)} 
                 type="text"
                 required
+                name="user_name"
                 className="bg-gray-200 text-sm p-2  outline-none rounded-lg "
               ></input>
             </div>
@@ -79,7 +114,9 @@ function Contact({}: Props) {
               <label>Email</label>
               <input
                 type="text"
+                onChange={(e) => setEmail(e.target.value)} 
                 required
+                name="user_email"
                 className="bg-gray-200 text-sm p-2 outline-none rounded-lg "
               ></input>
             </div>
@@ -91,7 +128,9 @@ function Contact({}: Props) {
             <div className="flex flex-col ">
               <label>Phone</label>
               <input
+              onChange={(e) => setPhone(e.target.value)}
                 type="text"
+                name="phone_number"
                 required
                 className="bg-gray-200 text-sm p-2 outline-none rounded-lg "
               ></input>
@@ -100,7 +139,9 @@ function Contact({}: Props) {
               <label>Subject</label>
               <input
                 type="text"
+                onChange={(e) =>  setSubject(e.target.value)}
                 required
+                name="subject"
                 className="bg-gray-200 text-sm p-2 outline-none rounded-lg "
               ></input>
             </div>
@@ -108,8 +149,9 @@ function Contact({}: Props) {
             <div className="flex flex-col md:w-[600px] ">
               
               <label>Message</label>
-              <textarea  className="bg-gray-200 text-sm  h-[200px] p-2 rounded-lg"></textarea>
+              <textarea name="message"  onChange={(e) => setMessage(e.target.value)} className="bg-gray-200 text-sm outline-none  h-[200px] p-2 rounded-lg"></textarea>
             </div>
+            <button type="submit" className="bg-red  text-white px-3 py-1 rounded-lg"> Send </button>
           </form>
         </div>
       </main>
