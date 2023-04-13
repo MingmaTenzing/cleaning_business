@@ -59,12 +59,14 @@ function Contact({}: Props) {
           </div>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 flex flex-col items-center">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-800 text-center">
             Get In Touch
           </h1>
 
-          <form className=" w-[80%] m-auto space-y-4">
+          <form className=" w-[600px] mt-10 space-y-4 md:flex md:flex-wrap md:space-y-0  ">
+            <div className="space-y-2 w-[300px] p-2">
+
             <div className="flex flex-col ">
               <label>Name</label>
               <input
@@ -81,6 +83,11 @@ function Contact({}: Props) {
                 className="bg-gray-200 text-sm p-2 outline-none rounded-lg "
               ></input>
             </div>
+            </div>
+
+            <div className="space-y-2 w-[300px] p-2">
+
+
             <div className="flex flex-col ">
               <label>Phone</label>
               <input
@@ -97,7 +104,8 @@ function Contact({}: Props) {
                 className="bg-gray-200 text-sm p-2 outline-none rounded-lg "
               ></input>
             </div>
-            <div className="flex flex-col ">
+            </div>
+            <div className="flex flex-col md:w-[600px] ">
               
               <label>Message</label>
               <textarea  className="bg-gray-200 text-sm  h-[200px] p-2 rounded-lg"></textarea>
