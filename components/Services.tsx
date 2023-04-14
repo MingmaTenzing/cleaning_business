@@ -3,6 +3,7 @@ import housecleaningimg from "../assests/house-cleaning.png";
 import deepcleaningimg from "../assests/deep-cleaning.png"
 import postrenovationimg from "../assests/renovation.png"
 import apartmentcleaning from "../assests/apartment-cleaning.png"
+import Link from "next/link";
 type Props = {};
 function Services({}: Props) {
   return (
@@ -34,7 +35,10 @@ function Services({}: Props) {
             make sure to keep your home clean on a weekly, bi-weekly or monthly
             basis.
           </p>
+         <Link href="/contact">
           <button className="bg-red px-3 py-2 text-white font-semibold rounded-lg"> Contact Now</button>
+         
+         </Link>
         </div>
       </div>
       <div className="  min-h-[350px] p-5 min-w-[300px]  border rounded-lg overflow-hidden border-[#5d5d5d]  hover:text-white hover:bg-[#5d5d5d] transition-all ease-linear duration-150  flex justify-center items-center">
@@ -52,7 +56,10 @@ function Services({}: Props) {
             make sure to keep your home clean on a weekly, bi-weekly or monthly
             basis.
           </p>
+         <Link href="/contact">
           <button className="bg-red px-3 py-2 text-white font-semibold rounded-lg"> Contact Now</button>
+         
+         </Link>
         </div>
       </div>
       <div className="  min-h-[350px] p-5 min-w-[300px]  border rounded-lg overflow-hidden border-green-700 hover:text-white hover:bg-green-700 transition-all ease-linear duration-150 flex justify-center items-center">
@@ -70,7 +77,10 @@ function Services({}: Props) {
             make sure to keep your home clean on a weekly, bi-weekly or monthly
             basis.
           </p>
+         <Link href="/contact">
           <button className="bg-red px-3 py-2 text-white font-semibold rounded-lg"> Contact Now</button>
+         
+         </Link>
         </div>
       </div>
       <div className="  min-h-[350px] p-5 min-w-[300px]  border rounded-lg overflow-hidden border-blue-400 hover:text-white hover:bg-blue-400 transition-all ease-linear duration-150  flex justify-center items-center">
@@ -88,7 +98,10 @@ function Services({}: Props) {
             make sure to keep your home clean on a weekly, bi-weekly or monthly
             basis.
           </p>
+         <Link href="/contact">
           <button className="bg-red px-3 py-2 text-white font-semibold rounded-lg"> Contact Now</button>
+         
+         </Link>
         </div>
       </div>
 

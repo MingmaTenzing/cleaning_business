@@ -35,9 +35,12 @@ function Nav({}: Props) {
         <p className="  hover:text-orange cursor-pointer"> Contact</p>
       </div>
       <div className="flex space-x-3">
-        <button className=" hover:bg-gray-600 text-sm px-2 py-2 bg-orange rounded-lg text-white  font-semibold">
+     <Link href="/contact">
+       <button className=" hover:bg-gray-600 text-sm px-2 py-2 bg-orange rounded-lg text-white  font-semibold">
           Book schedule
         </button>
+     
+     </Link> 
         <div className=" md:hidden">
           <Bars3Icon className="w-8" onClick={() => setOpenMenu(!openMenu)} />
         </div>
@@ -70,7 +73,7 @@ function Nav({}: Props) {
                 </p>
               </Link>
 
-              <Link href="">
+              <Link href="/contact">
                 <p className=" font-semibold  text-xl; text-gray-800 my-2">
                   Contact Us
                 </p>
