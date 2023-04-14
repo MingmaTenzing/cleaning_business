@@ -8,7 +8,11 @@ import EmailIcon from "@mui/icons-material/Email";
 import Footer from "../../components/Footer";
 import { FormEvent, useState } from "react";
 import React, { useRef } from 'react';
+import RingLoader from "react-spinners/RingLoader";
+
 import emailjs from '@emailjs/browser';
+
+import toast, { Toaster } from 'react-hot-toast';
 
 
 type Props = {};
@@ -18,7 +22,8 @@ function Contact({}: Props) {
   const [phone, setPhone] = useState<string>();
   const [subject, setSubject] = useState<string>();
   const [message, setMessage] = useState<string>();
-
+  const [sending, setSending] = useState<boolean>(false);
+  const [sentEmail, setsentEmail] = useState<boolean>(false);
   console.log(name,email, phone, subject, message);
 
 const form = useRef<HTMLFormElement>(null);
@@ -30,10 +35,16 @@ const form = useRef<HTMLFormElement>(null);
       return;
     }
     else {
-      emailjs.sendForm("service_spab4la" , "template_3gs2ipj", form.current! ,'5lDQ2fsinXAaz-OgN').then((result) => {
-        console.log(result.text);
+      setSending(true);
+      emailjs.sendForm("service_spab4la" , "template_3gs2ipj", form.current! ,'5lDQ2fsinXAaz-OgN').then(() => {
+        setSending(false);
+        setsentEmail(true);
+        toast.success('Your email has been sent')
+        
       },(error) => {
+        setSending(false);
         console.log(error.message);
+        toast.error('There was an error sending your email. Please try again later')
       }
       ) 
 
@@ -52,6 +63,7 @@ const form = useRef<HTMLFormElement>(null);
       </Head>
 
       <main>
+        <Toaster/>
         <Nav />
         <div className=" relative">
           <Image
@@ -146,12 +158,20 @@ const form = useRef<HTMLFormElement>(null);
               ></input>
             </div>
             </div>
-            <div className="flex flex-col md:w-[600px] ">
+            <div className="pb-2 flex flex-col md:w-[600px] ">
               
               <label>Message</label>
-              <textarea name="message"  onChange={(e) => setMessage(e.target.value)} className="bg-gray-200 text-sm outline-none  h-[200px] p-2 rounded-lg"></textarea>
+              <textarea required name="message"  onChange={(e) => setMessage(e.target.value)} className="bg-gray-200 text-sm outline-none  h-[200px] p-2 rounded-lg"></textarea>
             </div>
-            <button type="submit" className="bg-red  text-white px-3 py-1 rounded-lg"> Send </button>
+            <div className="flex space-x-4 items-center">
+
+{
+  sentEmail ? ( <button disabled type="submit" className="bg-red  text-white px-3 py-0 rounded-lg w-[80px] h-10  grayscale"> Send </button>): ( <button type="submit" className="bg-red  text-white px-3 py-0 rounded-lg w-[80px] h-10"> Send </button>)
+}
+           
+           { sending &&  <RingLoader size={40} color="#fdb139" className="" />
+           } 
+            </div>
           </form>
         </div>
       </main>
