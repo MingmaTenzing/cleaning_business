@@ -24,7 +24,10 @@ export default function Home() {
       <Nav />
       <Landing />
       <Services />
+      <section id='aboutus' >
+
       <AboutUs />
+      </section>
       <WhyChooseUs />
       <Estimate />
       <Reviews />

@@ -31,8 +31,13 @@ function Nav({}: Props) {
         <Link href="/services">
           <p className="  hover:text-orange cursor-pointer"> Services</p>
         </Link>
+        <Link href="#aboutus">
         <p className=" hover:text-orange cursor-pointer "> About</p>
+        </Link>
+        <Link href="/contact">
+        
         <p className="  hover:text-orange cursor-pointer"> Contact</p>
+        </Link>
       </div>
       <div className="flex space-x-3">
      <Link href="/contact">
