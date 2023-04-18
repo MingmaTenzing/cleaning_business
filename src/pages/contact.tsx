@@ -84,7 +84,7 @@ const form = useRef<HTMLFormElement>(null);
               style={{ fontSize: "50" }}
             />
             <h2 className="text-gray-800 font-bold">Dial and Get Solution:</h2>
-            <h3 className="text-gray-600">02333232432</h3>
+            <h3 className="text-gray-600">0431 032 396</h3>
           </div>
           <div className="flex flex-col items-center space-y-2 justify-center hover:border-black rounded-lg border w-[300px] h-[250px] ">
             <LocationOnIcon
@@ -92,7 +92,7 @@ const form = useRef<HTMLFormElement>(null);
               style={{ fontSize: "50" }}
             />
             <h2 className="text-gray-800 font-bold">Find Our Office:</h2>
-            <h3 className="text-gray-600">6th Floor, Barbosa Sydney</h3>
+            <h3 className="text-gray-600 text-center">211/251 West Coast Highway, Scarborough WA 6019</h3>
           </div>
           <div className="flex flex-col items-center space-y-2 justify-center hover:border-black rounded-lg border w-[300px] h-[250px]">
             <EmailIcon
@@ -100,7 +100,7 @@ const form = useRef<HTMLFormElement>(null);
               style={{ fontSize: "50" }}
             />
             <h2 className="text-gray-800 font-bold">Mail us Anytime:</h2>
-            <h3 className="text-gray-600">info@sparkandclean.com.au</h3>
+            <h3 className="text-gray-600">info@luxoclean.com.au</h3>
           </div>
         </div>
 

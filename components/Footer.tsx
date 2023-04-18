@@ -20,9 +20,9 @@ function Footer({}: Props) {
        </div>
        <div>
         <h1 className="text-orange underline text-xl font-bold">Contact</h1>
-        <p className="text-sm">Location: 6th Floor, Perth</p>
-        <p className="text-sm">Email: sparkclena@gmail.com</p>
-        <p className="text-sm">Phone: 0243343434</p>
+        <p className="text-sm">Location: 211/251 West Coast Highway, Scarborough 6019</p>
+        <p className="text-sm">Email: info@luxoclean.com.au</p>
+        <p className="text-sm">Phone: 0431 032 396</p>
        </div>
 
        <div className="space-x-2">
