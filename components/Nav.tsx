@@ -16,7 +16,7 @@ function Nav({}: Props) {
       <div>
         <Link href="/">
           <Image
-            src="/logo.png"
+            src="/luxoclean.png"
             width={100}
             height={100}
             alt="logo"

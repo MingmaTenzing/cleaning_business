@@ -17,8 +17,8 @@ export default function Home() {
         <title>LuxoClean</title>
         <meta name="description" content="LuxoClean cleaning services" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.png" />
-        <meta property="og:image" content="/logo.png" />
+        <link rel="icon" href="/luxoclean.png" />
+        <meta property="og:image" content="/luxoclean.png" />
       </Head>
     <main className="overflow-x-hidden">
 
