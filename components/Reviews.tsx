@@ -97,7 +97,7 @@ function Reviews({}: Props) {
                 <StarIcon className="w-4 text-orange" />
               </div>
               <p className=" text-gray-500 text-sm text-center">
-                Impressed with LuxoClean's attention to detail. They left my
+                Impressed with LuxoClean&apos;s attention to detail. They left my
                 apartment spotless. Reliable and efficient service. A cleaning
                 company I can trust.
               </p>
@@ -121,7 +121,7 @@ function Reviews({}: Props) {
                 <StarIcon className="w-4 text-orange" />
               </div>
               <p className=" text-gray-500 text-sm text-center">
-                LuxoClean's cleaners are top-notch. They were punctual,
+                LuxoClean&apos;s cleaners are top-notch. They were punctual,
                 respectful, and attentive to my specific requests. I am thrilled
                 with the results!
               </p>
@@ -146,7 +146,7 @@ function Reviews({}: Props) {
               </div>
               <p className=" text-gray-500 text-sm text-center">
                 Convenient and reliable! LuxoClean accommodated my schedule and
-                delivered excellent service. I couldn't be happier with their
+                delivered excellent service. I couldn&apos;t be happier with their
                 work.
               </p>
             </div>

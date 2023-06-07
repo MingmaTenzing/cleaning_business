@@ -11,7 +11,7 @@ function AboutUs({}: Props) {
           We Are Dedicated To Do Your Work
         </p>
         <p className="text-sm text-gray-700 mt-4 text-center  w-2/3">
-          LuxoClean: Australia's premier house and apartment cleaning service.
+          LuxoClean: Australia&apos;s premier house and apartment cleaning service.
           Exceptional results, eco-friendly products, and a professional team
           dedicated to your satisfaction. Contact us for a personalized quote
           and enjoy a sparkling clean home
